@@ -40,7 +40,7 @@ const App = () => {
 
   const runAutochangeTO = () => {
     changeTO = setTimeout(() => {
-      changeSlides(1);
+      changeSlides(activeSlide);
       runAutochangeTO();
     }, AUTOCHANGE_TIME);
   };
